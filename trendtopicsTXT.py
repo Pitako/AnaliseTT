@@ -22,10 +22,10 @@ import pytz
 
 
 #Autenticacoes
-consumer_key = 'jULJjwOSBmILsAaIWRSV6BkTM'
-consumer_secret = 'ZUGIjz07rSYaug3ltxUbEeMNa3dD6yYs6E9zEAdPd1nzcXId2n'
-access_token = '343335743-RpyWTzbqaxzBCoMZBjtkN2TIMmhVYZcCPyHe9lda'
-access_token_secret = 'YZJbm9y1qABs6yurUo5sblzoC1ICy7SnqZMDRwhggcFfb'
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_token_secret = ''
 
 
 # In[4]:
@@ -39,71 +39,6 @@ api = tweepy.API(auth)
 # Veja mais em https://dev.twitter.com/docs/api/1.1/get/trends/place e http://developer.yahoo.com/geo/geoplanet/
 BRAZIL_WOE_ID = 23424768
  
-# brazil_trends = api.trends_place(BRAZIL_WOE_ID)
- 
-# trends = json.loads(json.dumps(brazil_trends, indent=1))
- 
-# for trend in trends[0]["trends"]:
-# 	print (trend["name"]+' '+str(trend["tweet_volume"]))
-    
-
-
-# In[ ]:
-
-
-
-
-
-# In[5]:
-
-
-# mydb = mysql.connector.connect(
-#   host="localhost",
-#   user="root",
-#   password="root",
-#   database="twitterreacttv"
-    
-# )
-
-# print(mydb)
-
-# mycursor = mydb.cursor()
-
-
-# In[6]:
-
-
-# mycursor = mydb.cursor()
-
-# sql = "INSERT INTO customers (name, address) VALUES (%s, %s)"
-# val = ("John", "Highway 21")
-# mycursor.execute(sql, val)
-
-# mydb.commit()
-
-
-# In[9]:
-
-
-# now = datetime.now()
-
-# brazil_trends = api.trends_place(BRAZIL_WOE_ID) 
-# trends = json.loads(json.dumps(brazil_trends, indent=1))
-
-# for trend in trends[0]["trends"]:
-#     val = now.strftime("%d/%m/%Y %H:%M:%S") + ";" + trend["name"] + ";" + str(trend["tweet_volume"]);
-                
-#     print(val)
-
-
-# In[ ]:
-
-
-
-
-
-# In[18]:
-
 
 outputFile = 'trendtopicsUTC.txt'
 
